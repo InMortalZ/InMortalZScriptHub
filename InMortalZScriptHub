@@ -1,0 +1,104 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("InMortalZ Script Hub ", "Midnight")
+
+-- MAIN
+local Main = Window:NewTab("Da Hood Scripts")
+local MainSection = Main:NewSection("Da Hood")
+
+
+MainSection:NewButton("Faded", "Da Hood Faded Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+MainSection:NewButton("Swagmode", "Swagmode Da Hood Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/609/main/99"),true))()
+end)
+
+MainSection:NewButton("RayX", "RayX Da Hood Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+end)
+
+MainSection:NewButton("Destiny", "Destiny Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
+end)
+
+MainSection:NewButton("Enclosed", "Enclosed Da Hood Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/dylannpro123/enclosed/main/enclosed'))()
+end)
+
+MainSection:NewButton("Vortex", "Vortex Da Hood Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex", true))()
+end)
+
+MainSection:NewButton("Untitled Hood", "Untitled Hood Script", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/rogerthehhh/0.2flyfly/main/flyflye"),true))()
+end)
+
+MainSection:NewButton("CrispyNuker", "Grenade Nuke", function()
+    loadstring(game:HttpGet("https://ifaded.xyz/raw/CrispyNuker", true))()
+end)
+
+--Extra
+local Extra = Window:NewTab("Random Scripts")
+local ExtraSection = Extra:NewSection("Random Scripts")
+
+ExtraSection:NewButton("Ninja Legends", "Ninja Legends Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HydraVirgo/ninjalegendsfreegui/main/obfusc", true))()
+end)
+
+ExtraSection:NewButton("Funky Friday", "Funky Friday Auto Player Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
+ExtraSection:NewButton("King Legacy", "King Legacy Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+end)
+
+ExtraSection:NewButton("Blox Fruit", "Blox Fruit Script", function()
+    _G.Color = Color3.fromRGB(52, 190, 255)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/NEWBF.lua"))()
+end)
+
+ExtraSection:NewButton("Counter Blox", "Counter Blox Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+end)
+
+ExtraSection:NewButton("MM2", "MM2 Script", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
+end)
+
+ExtraSection:NewButton("InfiniteYield", "InfiniteYield Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+ExtraSection:NewButton("Phantom Forces", "Phantom Forces Script", function()
+    loadstring(game:HttpGet("https://ducksite.xyz/ceri/main.lua"))()
+end)
+
+ExtraSection:NewButton("Stands Awakening", "Stands Awakening Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
+end)
+
+ExtraSection:NewButton("Frdiay Night Bloxxin", "Frdiay Night Bloxxin Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Malware10/Scripts/main/Friday%20Night%20Bloxxin'%20Autoplayer"))()
+end)
+
+
+--LOCAL PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("WalkSpeed", "Change Player Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+
+--Other
+local Other = Window:NewTab("Credits")
+local OtherSection = Other:NewSection("Credits")
+
+OtherSection:NewButton("Owner: InMortalZ#8809", "Creator of this gui: InMortalZ#8809", function()  
+end)
+
+OtherSection:NewButton("Tester: Ghost_#0132", "Creator of this gui: InMortalZ#8809", function()  
+end)
